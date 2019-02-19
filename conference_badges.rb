@@ -16,4 +16,7 @@ def assign_rooms(array)
   room_assignment = []
   array.each_with_index do |name,index|
     badge_msg = "Hello, #{name}! You'll be assigned to room#{index + 1}"
+    room_assignment.push(badge_msg)
+  end
+  return room_assignment
 end
